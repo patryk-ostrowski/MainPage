@@ -71,12 +71,12 @@ class App extends React.Component{
 
   render(){
     return (
-      <>
+      <div className="container">
         <Top />
         <Menu />
         <Bottom />
         <Footer />
-      </>      
+      </div>      
     )
   }
 }
