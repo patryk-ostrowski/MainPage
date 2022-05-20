@@ -4,6 +4,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a:link {
+  color: black;
+}
+
 a:visited {
   color: black;
 }
@@ -32,10 +36,14 @@ a:visited {
   text-align: center;
 }
 
+/* .menu_container a {
+  grid-column-start: 4;
+} */
+
 .menu_position {
   background-color: #fff;
   padding: 5px;
-  height: 80px;
+  height: 60px;
 }
 
 .site_bottom {
@@ -48,13 +56,13 @@ a:visited {
 .menu_position i {
   transition: font-size .3s;
   transition-delay: 200ms;
-  font-size: 80px;
+  font-size: 60px;
   right: 30%;
 }
 
 .menu_position:hover i {
   transition: font-size .3s;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .menu_position p {
@@ -72,4 +80,8 @@ a:visited {
   transition: color .3s;
   transition-delay: 100ms;
   color: black;
+}
+
+.menu_position:active {
+  background-color: lightblue;
 }

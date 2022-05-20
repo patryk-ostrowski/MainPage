@@ -1,3 +1,28 @@
+const MenuItems = {
+  menu: [
+    {
+      a_href: "#",
+      i_className: "fa-regular fa-address-card",
+      text: "home",
+    },
+    {
+      a_href: "#",
+      i_className: "fa-regular fa-address-card",
+      text: "info",
+    },
+    {
+      a_href: "#",
+      i_className: "fa-regular fa-address-card",
+      text: "portfolio",
+    },
+    {
+      a_href: "#",
+      i_className: "fa-regular fa-address-card",
+      text: "kontakt",
+    },
+  ]  
+}
+
 const Top = () => {
   return (
     <div className="site_top">
@@ -6,18 +31,23 @@ const Top = () => {
  )
 }
 
+const MenuButtons = () => {
+  let menu = MenuItems.menu
+  console.log(menu);
+  return (
+    menu.map(item=><a id={item.text} href={item.a_href}><div className="menu_position"><i className={item.i_className}><p>{item.text.toUpperCase()}</p></i></div></a>)
+  )
+
+  // return (
+  //   <a id="1" href="#"><div className="menu_position"><i className="fa-regular fa-address-card"><p>KONTAKT</p></i></div></a>
+  // )
+}
+
 const Menu = () => {
   return (
     <div className="site_menu">
       <div className="menu_container">
-        <div id="1" className="menu_position">3213213131</div>
-        <div id="2" className="menu_position">3213213131</div>
-        <div id="3" className="menu_position">3213213131</div>
-        <div id="4" className="menu_position">3213213131</div>
-        <div id="5" className="menu_position">3213213131</div>
-        <div id="6" className="menu_position">3213213131</div>
-        <div id="7" className="menu_position">3213213131</div>
-        <a href="#"><div id="8" className="menu_position"><i className="fa-regular fa-address-card"><p>KONTAKT</p></i></div></a>
+        <MenuButtons />
       </div>
     </div>
   )
