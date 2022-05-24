@@ -2,17 +2,17 @@ const MenuItems = {
   menu: [
     {
       a_href: "#",
-      i_className: "fa-regular fa-address-card",
+      i_className: "fa-regular fa-compass",
       text: "home",
     },
     {
       a_href: "#",
-      i_className: "fa-regular fa-address-card",
-      text: "info",
+      i_className: "fa-regular fa-face-smile",
+      text: "o mnie",
     },
     {
       a_href: "#",
-      i_className: "fa-regular fa-address-card",
+      i_className: "fa-regular fa-chart-bar",
       text: "portfolio",
     },
     {
@@ -35,21 +35,23 @@ const MenuButtons = () => {
   let menu = MenuItems.menu
   console.log(menu);
   return (
-    menu.map(item=><a id={item.text} href={item.a_href}><div className="menu_position"><i className={item.i_className}><p>{item.text.toUpperCase()}</p></i></div></a>)
+    menu.map(item=><a id={item.text} href={item.a_href}><div className="menu_position"><i className={item.i_className}><p className="menu_list">{item.text.toUpperCase()}</p></i></div></a>)
   )
-
-  // return (
-  //   <a id="1" href="#"><div className="menu_position"><i className="fa-regular fa-address-card"><p>KONTAKT</p></i></div></a>
-  // )
 }
 
-const Menu = () => {
+const Menu_right = () => {
   return (
-    <div className="site_menu">
+    <div className="menu_right">
       <div className="menu_container">
         <MenuButtons />
       </div>
     </div>
+  )
+}
+
+const Menu_left = () => {
+  return (
+    <div className="menu_left">left</div>
   )
 }
 
@@ -73,7 +75,8 @@ class App extends React.Component{
     return (
       <div className="container">
         <Top />
-        <Menu />
+        <Menu_left />
+        <Menu_right />
         <Bottom />
         <Footer />
       </div>      
