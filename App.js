@@ -1,21 +1,25 @@
 const MenuItems = {
   menu: [
     {
+      id: 1,
       a_href: "#",
       i_className: "fa-regular fa-compass",
       text: "home",
     },
     {
+      id: 2,
       a_href: "#",
       i_className: "fa-regular fa-face-smile",
       text: "o mnie",
     },
     {
+      id: 3,
       a_href: "#",
       i_className: "fa-regular fa-clone",
       text: "co umiem",
     },
     {
+      id: 4,
       a_href: "#",
       i_className: "fa-regular fa-address-card",
       text: "kontakt",
@@ -26,30 +30,29 @@ const MenuItems = {
 const Top = () => {
   return (
     <div className="site_top">
-      Top
+      <h1 className="site_top_title">WEB-DEV Patryk Ostrowski</h1>
     </div>
  )
 }
 
-const MenuButtons = () => {
+const MenuButtons = (props) => {
   let menu = MenuItems.menu
-  console.log(menu);
   return (
-    menu.map(item=><a id={item.text} href={item.a_href}><div className="menu_position"><i className={item.i_className}><p className="menu_list">{item.text.toUpperCase()}</p></i></div></a>)
+    menu.map(item=><a key={item.id} href={item.a_href}><div key={item.id} className="menu_position" onClick={props.handleMenu}><i className={item.i_className}><p className="menu_list">{item.text.toUpperCase()}</p></i></div></a>)
   )
 }
 
 const Menu_left = () => {
   return (
-    <div className="menu_left">left</div>
+    <div className="menu_left"></div>
   )
 }
 
-const Menu_right = () => {
+const Menu_right = (props) => {
   return (
     <div className="menu_right">
       <div className="menu_container">
-        <MenuButtons />
+        <MenuButtons handleMenu={props.handleMenu}/>
       </div>
     </div>
   )
@@ -58,7 +61,9 @@ const Menu_right = () => {
 const Bottom = () => {
   return (
     <div className="site_bottom">
-        Bottom
+      <div className="site_content">
+        Siema! to ja!
+      </div>
     </div>)
 }
 
@@ -74,12 +79,20 @@ class App extends React.Component{
     id: "",
   }
 
+  handleMenu = () => {
+    const button_id = toString(1);
+    this.setState({
+      id: button_id,
+    })
+    
+  }
+
   render(){
     return (
       <div className="container">
         <Top />
         <Menu_left />
-        <Menu_right />
+        <Menu_right handleMenu={this.handleMenu}/>
         <Bottom />
         <Footer />
       </div>      
