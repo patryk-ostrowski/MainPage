@@ -12,8 +12,8 @@ const MenuItems = {
     },
     {
       a_href: "#",
-      i_className: "fa-regular fa-chart-bar",
-      text: "portfolio",
+      i_className: "fa-regular fa-clone",
+      text: "co umiem",
     },
     {
       a_href: "#",
@@ -39,6 +39,12 @@ const MenuButtons = () => {
   )
 }
 
+const Menu_left = () => {
+  return (
+    <div className="menu_left">left</div>
+  )
+}
+
 const Menu_right = () => {
   return (
     <div className="menu_right">
@@ -46,12 +52,6 @@ const Menu_right = () => {
         <MenuButtons />
       </div>
     </div>
-  )
-}
-
-const Menu_left = () => {
-  return (
-    <div className="menu_left">left</div>
   )
 }
 
@@ -70,6 +70,9 @@ const Footer = () => {
 }
 
 class App extends React.Component{
+  state = {
+    id: "",
+  }
 
   render(){
     return (

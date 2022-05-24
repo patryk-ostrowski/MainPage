@@ -27,7 +27,7 @@ a:visited {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   height: 150px;
-  background-image: url("/proby/MainPage/images/top-bg.PNG");
+  background-image: url(/proby/MainPage/images/top-bg.PNG);
   opacity: .5;
 }
 
