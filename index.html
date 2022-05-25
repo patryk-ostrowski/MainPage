@@ -11,14 +11,49 @@
 </head>
 
 <body>
-  <div id="root">
-    <!-- kontener na aplikację react  -->
-  </div>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <script type="text/babel" src="App.js"></script>
+  <section class="site_top">
+    <h1 class="site_top_title">WEB-DEV Patryk Ostrowski</h1>
+  </section>
+  <section class="menu">
+    <button id="home" class="menu_position">
+      <i id="home" class="fa-regular fa-compass">
+        <p id="home" class="menu_list">GŁÓWNA</p>
+      </i>
+    </button>
+    <button id="about" class="menu_position">
+      <i id="about" class="fa-regular fa-face-smile">
+        <p id="about" class="menu_list">O MNIE</p>
+      </i>
+    </button>
+    <button id="portfolio" class="menu_position">
+      <i id="portfolio" class="fa-regular fa-clone">
+        <p id="portfolio" class="menu_list">CO UMIEM</p>
+      </i>
+    </button>
+    <button id="contact" class="menu_position">
+      <i id="contact" class="fa-regular fa-address-card">
+        <p id="contact" class="menu_list">KONTAKT</p>
+      </i>
+    </button>
+  </section>
+  <section class="site_bottom">
+    <div id="home_content">
+      Siema! to ja!
+    </div>
+    <div id="about_content" style="display:none">
+      Taki jestem
+    </div>
+    <div id="portfolio_content" style="display:none">
+      Tak się uczyłem
+    </div>
+    <div id="contact_content" style="display:none">
+      Dzwoń!
+    </div>
+  </section>
+  <section class="site_footer">
+    Footer
+  </section>
+  <script src="Main.js"></script>
 </body>
 
 </html>

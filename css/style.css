@@ -5,13 +5,6 @@ body {
   background-color: #2a3553;
 }
 
-a:link {
-  color: rgb(216, 216, 216);
-}
-
-a:visited {
-  color: rgb(216, 216, 216);
-}
 
 .container {
   display: grid;
@@ -28,43 +21,36 @@ a:visited {
   grid-row: 1 / 2;
   height: 150px;
   background-image: url(/proby/MainPage/images/top-bg.PNG);
-
-
 }
 
 .site_top_title {
   color: rgb(216, 216, 216, 1);
   grid-column: 2;
   grid-row: 2;
+  text-align: center;
 }
 
 /* -----------menu container------------ */
-/* .menu_left {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
-  height: 80px;
-} */
 
-.menu_right {
-  grid-column: 2 / 6;
-  grid-row: 2 / 3;
-  background-image: url(/proby/MainPage/images/menu-bg.PNG);
-}
-
-.menu_container {
+.menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 70px;
-  /* gap & padding do oddzielenia kontenera menu od site_menu */
-  gap: 2%;
+  grid-auto-rows: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  gap: 1.5%;
   position: sticky;
   text-align: center;
 }
 
 .menu_position {
+  cursor: pointer;
+  border: none;
+  color: rgb(216, 216, 216);
   background-color: rgb(0, 0, 0, .3);
   padding-top: 10px;
-  height: 70px;
+  padding-bottom: 10px;
+  height: 80px;
   text-align: center;
 }
 
@@ -113,11 +99,12 @@ a:visited {
   color: rgb(216, 216, 216);
   grid-column: 1 / -1;
   grid-row: 3 / 4;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
+
 
 }
 
-.site_content {
+.site_bottom div {
   color: rgb(216, 216, 216);
   background-color: rgb(0, 0, 0, .3);
   padding: 20px;
