@@ -96,20 +96,43 @@ body {
 
 .site_bottom {
   background-color: #2a3553;
-  color: rgb(216, 216, 216);
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-  padding: 20px 40px 40px 40px;
-
-
+  padding: 20px 100px 40px 100px;
 }
 
 .site_bottom div {
   color: rgb(216, 216, 216);
   background-color: rgb(0, 0, 0, .3);
-  padding: 20px;
+  padding: 20px 40px;
   min-height: 450px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 100px 1fr;
 }
+
+
+div ul {
+  display: none;
+}
+
+.about_content_title {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.about_content_buttons {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+}
+
+
+
+.about_content_text {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+
 
 /* -----------footer container------------ */
 
