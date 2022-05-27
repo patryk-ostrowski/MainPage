@@ -6,6 +6,10 @@ body {
   color: rgb(216, 216, 216);
 }
 
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
 button {
   background-color: rgb(0, 0, 0, .3);
   color: rgb(216, 216, 216);
@@ -36,9 +40,7 @@ span {
 
 .site_top {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
+  grid-template-columns: 50px 1fr 50px;
   height: 150px;
   background-image: url(/proby/MainPage/images/top-bg.PNG);
 }
@@ -58,7 +60,6 @@ span {
   padding-left: 100px;
   padding-right: 100px;
   gap: 1.5%;
-  position: sticky;
   text-align: center;
 }
 
@@ -86,7 +87,6 @@ span {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 18px;
-  margin: 0;
   padding-top: 5px;
   color: transparent;
 }
@@ -118,14 +118,14 @@ span {
   grid-template-rows: 550px;
 }
 
-#home_content h2{
-  margin: 0;
-}
-
 .hello {
   grid-column: 1/2;
   padding: 0px 20px 0px 20px;
   border-right: 1px solid rgb(216, 216, 216);
+}
+
+.hello h2 {
+  padding-bottom: 20px;
 }
 
 .experience {
@@ -173,6 +173,15 @@ span {
   grid-column: 1/-1;
   grid-row: 1/2;
   text-align: center;
+  padding: 0;
+}
+
+.about_content_title p {
+  padding-bottom: 5px;
+}
+
+.about_content_title p:last-child {
+  padding-bottom: 15px;
 }
 
 .about_content_buttons {
@@ -194,10 +203,6 @@ span {
   border-left: none;
 }
 
-.about_content_buttons button:last-child {
-  padding: 5px 3px 5px 4px;
-}
-
 .about_content_text {
   grid-column: 1/-1;
   grid-row: 3/4;
@@ -212,17 +217,21 @@ span {
 #portfolio_content {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  margin: 0;
 }
 
 .portfolio_title {
   grid-column: 1/-1;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio_content {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
+  padding: 0px 20px 0px 20px;
 }
 
 .portfolio_content h3 {
@@ -247,4 +256,109 @@ span {
 
 .site_footer h4 {
   margin: 0;
+}
+
+/* responsive design */
+@media all and (max-width: 1430px) {
+  .site_bottom {
+    font-size: 21px;
+    padding: 20px 50px 40px 50px;
+  } 
+
+  .menu {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media all and (max-width: 1176px) {
+  .site_top {
+    height: 70px;
+    background-image: url(/proby/MainPage/images/top-bg-tiny.png);
+  }
+
+  .site_bottom {
+    font-size: 18px;
+    padding: 20px 50px 40px 50px;
+  } 
+
+  .menu {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about_content_buttons {
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .about_content_buttons > button:nth-child(6), button:nth-child(7), button:nth-child(8), button:nth-child(9), button:nth-child(10) {
+    border-top: 1px solid rgb(216, 216, 216);
+  }
+
+  .about_content_buttons button:nth-child(6){
+    border-left: none;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .site_bottom {
+    font-size: 16px;
+    padding: 20px;
+  } 
+
+  .menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .site_bottom {
+    font-size: 14px;
+    padding: 5px;
+  } 
+
+  .site_bootom_container {
+    padding: 10px 10px;
+  }
+
+  .about_content_buttons {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .about_content_buttons button {
+    border-left: none;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .about_content_buttons > button:nth-child(6), button:nth-child(7), button:nth-child(8), button:nth-child(9), button:nth-child(10) {
+    border-top: none;
+  }
+
+  .menu {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50px;
+  }
+
+  .menu_position {
+    padding-top: 5px;
+    height: 50px;
+  }
+  
+  .menu_position i {
+    font-size: 40px;
+  }
+  
+  .menu_position:hover i {
+    font-size: 25px;
+  }
+  
+  .menu_position p {
+    font-size: 12px;
+  }
+  
 }
