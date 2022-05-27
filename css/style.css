@@ -16,7 +16,6 @@ button {
 
 button:hover {
   background-color: rgb(0, 0, 0, .5);
-
 }
 
 button:active {
@@ -27,6 +26,10 @@ button:active {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, auto);
+}
+
+span {
+  font-style: italic;
 }
 
 /* -----------head container------------ */
@@ -104,20 +107,65 @@ button:active {
 
 .site_bootom_container {
   background-color: rgb(0, 0, 0, .3);
-  padding: 20px 40px;
-  min-height: 450px;
+  padding: 25px 20px;
+  height: 550px;
 }
 
 /* -----------site home style------------ */
 
 #home_content {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 550px;
+}
+
+#home_content h2{
+  margin: 0;
+}
+
+.hello {
+  grid-column: 1/2;
+  padding: 0px 20px 0px 20px;
+  border-right: 1px solid rgb(216, 216, 216);
+}
+
+.experience {
+  grid-column: 2/3;
+  padding: 0px 20px 0px 20px;
+  border-right: 1px solid rgb(216, 216, 216);
+}
+#future_experience {
+  margin-left: 0;
+  padding-left: 15px;
+}
+
+.future_experience {
+  grid-column: 3/4;
+  padding: 0px 20px 0px 20px;
+}
+
+#experience {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#experience li ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 15px;
+  padding-bottom:15px;
+}
+
+
+#experience li ul li, #future_experience li {
+  list-style-type: square;
+  margin-left: 8px;
+  padding: 0px 10px 5px 10px;
 }
 
 /* -----------site about style------------ */
 
-div ul {
+#about_content_text ul {
   display: none;
 }
 
@@ -159,9 +207,6 @@ div ul {
   margin-top: 20px;
 }
 
-.about_text li span {
-  font-style: italic;
-}
 /* -----------site portfolio style------------ */
 
 #portfolio_content {
@@ -198,4 +243,8 @@ div ul {
   background-color: rgb(0, 0, 0, .3);
   padding: 15px;
   text-align: center;
+}
+
+.site_footer h4 {
+  margin: 0;
 }
