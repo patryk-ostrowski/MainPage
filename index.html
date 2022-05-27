@@ -16,18 +16,18 @@
   </section>
   <section class="menu">
     <button id="home" class="menu_position">
-      <i id="home" class="fa-regular fa-compass">
-        <p id="home" class="menu_list">GŁÓWNA</p>
+      <i id="home" class="fa-regular fa-face-smile">
+        <p id="home" class="menu_list">O MNIE</p>
       </i>
     </button>
     <button id="about" class="menu_position">
-      <i id="about" class="fa-regular fa-face-smile">
-        <p id="about" class="menu_list">O MNIE</p>
+      <i id="about" class="fa-regular fa-compass">
+        <p id="about" class="menu_list">HISTORIA</p>
       </i>
     </button>
     <button id="portfolio" class="menu_position">
       <i id="portfolio" class="fa-regular fa-clone">
-        <p id="portfolio" class="menu_list">CO UMIEM</p>
+        <p id="portfolio" class="menu_list">PORTFOLIO</p>
       </i>
     </button>
     <button id="contact" class="menu_position">
@@ -37,86 +37,103 @@
     </button>
   </section>
   <section class="site_bottom">
-    <div id="home_content" style="display:block">
-      <h2>Witam</h2>
-      <p>Strona - wizytówka oparta na HTML/CSS/JS.</p>
-      <p></p>
-    </div>
-    <div id="about_content" style="display:none">
-      <p class="about_content_title">Moja historia z IT sięga czasów szkoły gimnazjalnej. Droga jaką pokonałem nie do
-        końca zgadzała się z tym, co
-        chciałem robić w życiu, a IT zacząłem traktować bardziej jako małe hobby. Poniżej ważniejsze momenty związane z
-        IT oraz z nauką. W dużym skrócie :)</p>
-      <div class="about_content_buttons">
-        <button id="1">2006-2007</button>
-        <button id="2">2008-2009</button>
-        <button id="3">2010-2011</button>
-        <button id="4">2011-2012</button>
-        <button id="5">2013-2014</button>
-        <button id="6">2015-2016</button>
-        <button id="7">2018-2020</button>
-        <button id="8">2021</button>
-        <button id="9">2022</button>
-        <button id="10">Plany na przyszłość</button>
+    <section class="site_bootom_container">
+      <!-- home container -->
+      <div id="home_content" style="display:grid">
+        <h2>Witam</h2>
+        <p>Strona - wizytówka oparta na HTML/CSS/JS.</p>
+        <p></p>
       </div>
-      <div class="about_content_text">
-        <ul id="1">
-          <li>Udział w Szkolnym Konkursie Informatycznym, awans do Rejonowego Konkursu.</li>
-          <li>Udział w Rejononwym Konkursie Informatycznym, zajęcie VI miejsca i awans do Wojewódzkiego Konkursu.</li>
-          <li>Udział w Wojewódzkim Konkursie Informatycznym, tytuł finalisty.</li>
-          <li>Wybór kierunku dalszego kształcenia - technik budownictwa.</li>
-        </ul>
-        <ul id="4">
-          <li>Nauka budowy stron WWW za pomocą CMS Joomla! i pierwsza strona stworzona dla <span>Koła Naukowego
-              Architektów i Urbanistów</span>.</li>
-        </ul>
-        <ul id="2">
-          <li>Zakup książki <span>C++ Bez Obaw - Brian Overland.</span></li>
-          <li>Pierwsze kroki w nauce programowania w języku C++.</li>
-        </ul>
-        <ul id="3">
-          <li>Pierwsze kroki w budowaniu stron WWW - HTML i CSS z pomocą programu <span>Pajączek</span></li>
-          <li>Ukończenie technikum.</li>
-          <li>Wybranie kierunków studiów - Inżynier Budownictwa na <span> Warmińsko-Mazurkim w Olsztynie</span>.</li>
-        </ul>
-        <ul id="5">
-          <li>Przeniesienie na studia zaoczne na <span>Państwową Wyższą Szkołę Zawodową w Elblągu</span>.</li>
-          <li>Próba kontynuowania nauki C++ zakończona fiaskiem.</li>
-        </ul>
-        <ul id="6">
-          <li>Przerwanie studiów zaocznych na rok.</li>
-          <li>Próba budowania stron WWW opartych na HTML i CSS, bez większych sukcesów.</li>
-        </ul>
-        <ul id="7">
-          <li>Rozpoczęcie pracy w fabryce produkcyjnej kolejno na stanowiskach: Pracownik Produkcji, Technik Utrzymania
-            Ruchu, Specjalista ds. Infrastruktury Nieprodukcyjnej.</li>
-          <li>Ukończenie studiów - tytuł Inżyniera Budownictwa.</li>
-          <li>Początek nauki języka JavaScript.</li>
-          <li>Ukończenie kursów związanych z budową stron WWW za pomocą HTML/CSS/JS.</li>
-        </ul>
-        <ul id="8">
-          <li>Rozpoczęcie nauki języka programowania Python.</li>
-        </ul>
-        <ul id="9">
-          <li>Postanowienie - zmienić branżę na IT w kierunku budowy stron WWW.</li>
-          <li>Odświeżenie wiedzy o HTML/CSS/JS.</li>
-          <li>Rozpoczęcie nauki biblioteki React.</li>
-          <li>Zbudowanie tej strony :)</li>
-        </ul>
-        <ul id="10">
-          <li>Dalszy rozwój i poprawa kodowania w HTML/CSS/JS.</li>
-          <li>Zbudowanie pierwszej strony opartej o bibliotekę React.</li>
-          <li>Rozpoczęcie nauki TypeScript i Node.JS.</li>
-          <li>Znalezienie pracy jako Junior Front-end Developer.</li>
-        </ul>
+      <!-- about container -->
+      <div id="about_content" style="display:none">
+        <div class="about_content_title">
+          <p>Moja historia z IT sięga czasów szkoły gimnazjalnej. Droga, którą pokonałem, nie do
+            końca zgadzała się z tym, co
+            chciałem robić w życiu. IT zacząłem traktować bardziej jako małe hobby, aż do teraz.
+            </br> Poniżej ważniejsze
+            momenty
+            związane
+            z
+            IT oraz z nauką. W dużym skrócie :)</p>
+        </div>
+        <div class="about_content_buttons">
+          <button class="button_about" id="0">2006-2007</button>
+          <button class="button_about" id="1">2008-2009</button>
+          <button class="button_about" id="2">2010-2011</button>
+          <button class="button_about" id="3">2011-2012</button>
+          <button class="button_about" id="4">2013-2014</button>
+          <button class="button_about" id="5">2015-2016</button>
+          <button class="button_about" id="6">2018-2020</button>
+          <button class="button_about" id="7">2021</button>
+          <button class="button_about" id="8">2022</button>
+          <button class="button_about" id="9">Plany na przyszłość</button>
+        </div>
+        <div id="about_content_text" class="about_content_text">
+          <ul id="0" class="about_text">
+            <li>Udział w Szkolnym Konkursie Informatycznym, awans do Rejonowego Konkursu.</li>
+            <li>Udział w Rejononwym Konkursie Informatycznym, zajęcie VI miejsca i awans do Wojewódzkiego Konkursu.</li>
+            <li>Udział w Wojewódzkim Konkursie Informatycznym, tytuł finalisty.</li>
+            <li>Wybór kierunku dalszego kształcenia - technik budownictwa.</li>
+          </ul>
+          <ul id="1" class="about_text">
+            <li>Nauka budowy stron WWW za pomocą CMS Joomla! i pierwsza strona stworzona dla <span>Koła Naukowego
+                Architektów i Urbanistów</span>.</li>
+          </ul>
+          <ul id="2" class="about_text">
+            <li>Zakup książki <span>C++ Bez Obaw - Brian Overland</span>.</li>
+            <li>Pierwsze kroki w nauce programowania w języku C++.</li>
+          </ul>
+          <ul id="3" class="about_text">
+            <li>Pierwsze kroki w budowaniu stron WWW - HTML i CSS z pomocą programu <span>Pajączek</span>.</li>
+            <li>Ukończenie technikum.</li>
+            <li>Wybranie kierunków studiów - Inżynier Budownictwa na <span> Warmińsko-Mazurkim w Olsztynie</span>.</li>
+          </ul>
+          <ul id="4" class="about_text">
+            <li>Przeniesienie na studia zaoczne na <span>Państwową Wyższą Szkołę Zawodową w Elblągu</span>.</li>
+            <li>Próba kontynuowania nauki C++ zakończona fiaskiem.</li>
+          </ul>
+          <ul id="5" class="about_text">
+            <li>Przerwanie studiów zaocznych na rok.</li>
+            <li>Próba budowania stron WWW opartych na HTML i CSS, bez większych sukcesów.</li>
+          </ul>
+          <ul id="6" class="about_text">
+            <li>Rozpoczęcie pracy w fabryce produkcyjnej, kolejno na stanowiskach: Pracownik Produkcji, Technik
+              Utrzymania
+              Ruchu, Specjalista ds. Infrastruktury Nieprodukcyjnej.</li>
+            <li>Ukończenie studiów - tytuł Inżyniera Budownictwa.</li>
+            <li>Początek nauki języka JavaScript.</li>
+            <li>Ukończenie kursów związanych z budową stron WWW za pomocą HTML/CSS/JS.</li>
+          </ul>
+          <ul id="7" class="about_text">
+            <li>Rozpoczęcie nauki języka programowania Python.</li>
+          </ul>
+          <ul id="8" class="about_text">
+            <li>Postanowienie - zmienić branżę na IT w kierunku budowy stron WWW.</li>
+            <li>Odświeżenie wiedzy o HTML/CSS/JS.</li>
+            <li>Rozpoczęcie nauki biblioteki React.</li>
+            <li>Zbudowanie tej strony :)</li>
+          </ul>
+          <ul id="9" class="about_text">
+            <li>Dalszy rozwój i poprawa kodowania w HTML/CSS/JS.</li>
+            <li>Zbudowanie pierwszej strony opartej o bibliotekę React.</li>
+            <li>Rozpoczęcie nauki TypeScript i Node.JS.</li>
+            <li>Znalezienie pracy jako Junior Front-end Developer.</li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div id="portfolio_content" style="display:none">
-      Tak się uczyłem
-    </div>
-    <div id="contact_content" style="display:none">
-      Dzwoń!
-    </div>
+      <!-- portfolio container -->
+      <div id="portfolio_content" style="display:none">
+        <div class="portfolio_title">
+          <p>Tutaj będą pojawiać się linki do uruchomionych stron z GitHub oraz do stron z innych serwerów.</p>
+        </div>
+        <div class="portfolio_content">
+          <h3>Na razie brak!</h3>
+        </div>
+      </div>
+      <div id="contact_content" style="display:none">
+        Dzwoń!
+      </div>
+    </section>
   </section>
   <section class="site_footer">
     Footer
