@@ -42,7 +42,7 @@ span {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   height: 150px;
-  background-image: url(/proby/MainPage/images/top-bg.PNG);
+  background-image: url(/images/top-bg.PNG);
 }
 
 .site_top_title {
@@ -276,7 +276,7 @@ span {
 @media all and (max-width: 1176px) {
   .site_top {
     height: 70px;
-    background-image: url(/proby/MainPage/images/top-bg-tiny.png);
+    background-image: url(/images/top-bg-tiny.png);
   }
 
   .site_bottom {
