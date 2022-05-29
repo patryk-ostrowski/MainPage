@@ -395,6 +395,7 @@ a, a:visited, a:active, a:hover {
 }
 
 @media all and (max-width: 600px) {
+
   .site_top h1 {
     font-size: 18px;
   }
@@ -404,6 +405,9 @@ a, a:visited, a:active, a:hover {
     padding: 5px;
   } 
 
+  .site_bootom_container {
+    height: auto;
+  }
 
   #home_content {
     grid-template-columns: 1fr;
@@ -489,6 +493,7 @@ a, a:visited, a:active, a:hover {
     height: 18px;
     margin-right: 6px;
   }
+
   #contact_content > img {
     width: 150px;
     height: 150px;
