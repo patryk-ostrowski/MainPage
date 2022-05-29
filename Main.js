@@ -52,7 +52,7 @@ const handleMenu = (e) => {
       home_content.style.display = "none";
       about_content.style.display = "none";
       portfolio_content.style.display = "none";
-      contact_content.style.display = "grid";
+      contact_content.style.display = "flex";
       break;
   }
 }

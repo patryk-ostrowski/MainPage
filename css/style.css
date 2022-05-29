@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #2a3553;
+  background-color: #333333;
   color: rgb(216, 216, 216);
 }
 
@@ -36,19 +36,27 @@ span {
   font-style: italic;
 }
 
+a, a:visited, a:active, a:hover {
+  color:rgb(216, 216, 216);
+  text-decoration: none;
+}
+
 /* -----------head container------------ */
 
 .site_top {
   display: grid;
-  grid-template-columns: 50px 1fr 50px;
+  grid-template-columns: 2px 1fr 2px;
   height: 150px;
-  background-image: url(/proby/MainPage/images/top-bg.PNG);
 }
 
 .site_top_title {
   grid-column: 2;
   grid-row: 2;
+  font-size: 35px;
   text-align: center;
+  animation-name: sliding_title;
+  animation-duration: 1.5s;
+  animation-delay: .5s;
 }
 
 /* -----------menu container------------ */
@@ -100,7 +108,7 @@ span {
 /* -----------site content container------------ */
 
 .site_bottom {
-  background-color: #2a3553;
+  background-color: #333333;
   padding: 20px 100px 40px 100px;
   font-size: 22px;
 }
@@ -242,9 +250,29 @@ span {
 /* -----------site contact style------------ */
 
 #contact_content {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  padding-top: 50px;
+  font-size: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+#contact_content a {
+  margin-top: 15px;
+  display: flex;
+}
+
+.linkedin img, .github img, .instagram  img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+#contact_content > img {
+  width: 250px;
+  height: 250px;
+}
+
 
 /* -----------footer container------------ */
 
@@ -259,6 +287,15 @@ span {
 .site_footer h4 {
   margin: 0;
 }
+
+@keyframes sliding_title {
+  0%   {color:rgb(216, 216, 216); padding-left: 0px;}
+  25%  {color: rgb(190, 211, 155); padding-left: 200px;}
+  50%  {color:rgb(190, 211, 155); padding-left: 0px; padding-right: 0px;}
+  75%  {color:rgb(190, 211, 155); padding-right: 200px;}
+  100% {color:rgb(216, 216, 216); padding-right: 0px;}
+}
+
 
 /* ===================== responsive design ======================== */
 @media all and (max-width: 1430px) {
@@ -276,7 +313,6 @@ span {
 @media all and (max-width: 1176px) {
   .site_top {
     height: 70px;
-    background-image: url(/proby/MainPage/images/top-bg-tiny.png);
   }
 
   .site_bottom {
@@ -301,9 +337,33 @@ span {
   .about_content_buttons button:nth-child(6){
     border-left: none;
   }
+
+  #contact_content {
+    padding-top: 25px;
+    font-size: 25px;
+  }
+  
+  #contact_content a {
+    margin-top: 15px;
+  }
+  
+  .linkedin img, .github img, .instagram  img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
+  #contact_content > img {
+    width: 200px;
+    height: 200px;
+  }
+
 }
 
 @media all and (max-width: 920px) {
+  .site_top h1 {
+    font-size: 25px;
+  }
+
   .site_bottom {
     font-size: 16px;
     padding: 20px;
@@ -311,7 +371,6 @@ span {
 
   .site_bootom_container {
     padding: 20px 20px;
-    height: auto;
   }
 
   .menu {
@@ -323,11 +382,21 @@ span {
     padding: 0px 15px 0px 15px;
   }
 
+  #contact_content {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  #contact_content > img {
+    width: 180px;
+    height: 180px;
+  }
+
 }
 
 @media all and (max-width: 600px) {
   .site_top h1 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .site_bottom {
@@ -406,7 +475,34 @@ span {
     font-size: 12px;
   }
 
+  #contact_content {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  
+  #contact_content a {
+    margin-top: 10px;
+  }
+  
+  .linkedin img, .github img, .instagram  img {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+  }
+  #contact_content > img {
+    width: 150px;
+    height: 150px;
+  }
+
   .site_footer h4 {
     font-size: 10px;
+  }
+
+  @keyframes sliding_title {
+    0%   {color:rgb(216, 216, 216); padding-left: 0px;}
+    25%  {color: rgb(190, 211, 155); padding-left: 100px;}
+    50%  {color:rgb(190, 211, 155); padding-left: 0px; padding-right: 0px;}
+    75%  {color:rgb(190, 211, 155); padding-right: 100px;}
+    100% {color:rgb(216, 216, 216); padding-right: 0px;}
   }
 }
