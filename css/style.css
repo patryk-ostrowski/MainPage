@@ -47,10 +47,6 @@ a, a:visited, a:active, a:hover {
   display: grid;
   grid-template-columns: 2px 1fr 2px;
   height: 150px;
-<<<<<<< HEAD
-=======
-  background-image: url(/images/top-bg.PNG);
->>>>>>> c3a514e43044fbb2ebeacff9aeb9fa94d3d8918d
 }
 
 .site_top_title {
@@ -317,10 +313,6 @@ a, a:visited, a:active, a:hover {
 @media all and (max-width: 1176px) {
   .site_top {
     height: 70px;
-<<<<<<< HEAD
-=======
-    background-image: url(/images/top-bg-tiny.png);
->>>>>>> c3a514e43044fbb2ebeacff9aeb9fa94d3d8918d
   }
 
   .site_bottom {
