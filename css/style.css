@@ -44,6 +44,8 @@ a, a:visited, a:active, a:hover {
 /* -----------head container------------ */
 
 .site_top {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 33%, rgba(51,51,51,1) 100%);
   display: grid;
   grid-template-columns: 2px 1fr 2px;
   height: 150px;
