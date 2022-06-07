@@ -24,7 +24,7 @@ for (let button of button_about) {
     const about_text_id = document.getElementsByClassName("about_text")[button.id];
     about_text_id.style.display = "block";
     button.style.backgroundColor = "rgb(0, 0, 0, .7)";
-    button.style.color = "rgb(190, 211, 155)";
+    button.style.color = "rgb(214, 149, 52)";
   })
 }
 

@@ -77,6 +77,7 @@ a, a:visited, a:active, a:hover {
   padding-top: 10px;
   padding-bottom: 10px;
   height: 80px;
+  border-radius: 5px;
 }
 
 .menu_position i {
@@ -119,6 +120,7 @@ a, a:visited, a:active, a:hover {
   background-color: rgb(0, 0, 0, .3);
   padding: 25px 20px;
   height: 550px;
+  border-radius: 5px;
 }
 
 /* -----------site home style------------ */
@@ -227,8 +229,8 @@ a, a:visited, a:active, a:hover {
 /* -----------site portfolio style------------ */
 
 #portfolio_content {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 1fr;
   margin: 0;
 }
 
@@ -240,15 +242,21 @@ a, a:visited, a:active, a:hover {
 }
 
 .portfolio_content {
-  grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
-  padding: 0px 20px 0px 20px;
+  padding-top: 10px;
 }
 
-.portfolio_content h3 {
-  padding-top: 50px;
+.portfolio_content p, .portfolio_content a {
+  grid-row: 2/3;
+  padding-top: 10px;
+  margin: 0 10px;
 }
+
+.portfolio_content a:hover {
+  color: rgb(214, 149, 52);
+}
+
 /* -----------site contact style------------ */
 
 #contact_content {
@@ -292,9 +300,9 @@ a, a:visited, a:active, a:hover {
 
 @keyframes sliding_title {
   0%   {color:rgb(216, 216, 216); padding-left: 0px;}
-  25%  {color: rgb(190, 211, 155); padding-left: 200px;}
-  50%  {color:rgb(190, 211, 155); padding-left: 0px; padding-right: 0px;}
-  75%  {color:rgb(190, 211, 155); padding-right: 200px;}
+  25%  {color: rgb(214, 149, 52); padding-left: 200px;}
+  50%  {color:rgb(214, 149, 52); padding-left: 0px; padding-right: 0px;}
+  75%  {color:rgb(214, 149, 52); padding-right: 200px;}
   100% {color:rgb(216, 216, 216); padding-right: 0px;}
 }
 
@@ -506,9 +514,9 @@ a, a:visited, a:active, a:hover {
 
   @keyframes sliding_title {
     0%   {color:rgb(216, 216, 216); padding-left: 0px;}
-    25%  {color: rgb(190, 211, 155); padding-left: 100px;}
-    50%  {color:rgb(190, 211, 155); padding-left: 0px; padding-right: 0px;}
-    75%  {color:rgb(190, 211, 155); padding-right: 100px;}
+    25%  {color: rgb(214, 149, 52); padding-left: 100px;}
+    50%  {color:rgb(214, 149, 52); padding-left: 0px; padding-right: 0px;}
+    75%  {color:rgb(214, 149, 52); padding-right: 100px;}
     100% {color:rgb(216, 216, 216); padding-right: 0px;}
   }
 }
